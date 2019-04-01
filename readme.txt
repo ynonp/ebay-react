@@ -9,6 +9,9 @@
                   Course Materials:
                   https://github.com/ynonp/ebay-react
 
+The webpack command usually uses full path:
+node node_modules\webpack\bin\webpack.js -d
+
 
 
 Hello World (in codesandbox)
