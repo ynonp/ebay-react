@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import GameComponent from './game_component';
 
 
 function DaysOfTheWeek(props) {
@@ -31,7 +32,7 @@ function DaysOfTheWeek(props) {
 function App(props) {
   return (
     <div>
-      <DaysOfTheWeek />
+      <GameComponent />
     </div>
   )
 }
