@@ -1,13 +1,13 @@
 
 
-                        Hi ;)
+                  Hi ;)
 
-                        React Course
+                  React Course
 
-                        Ynon Perek
+                  Ynon Perek
 
-                        Course Materials:
-                        s.ynonperek.com/react
+                  Course Materials:
+                  https://github.com/ynonp/ebay-react
 
 
 
