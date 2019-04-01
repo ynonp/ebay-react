@@ -29,6 +29,7 @@ Day 1:
   * Hello React World (slides)
   * A First React Component on CodePen
   * Webpack / ngReact
+  * https://www.tocode.co.il/blog/2019-04-ngreact-intro
   ---
   * Properties
   * State
