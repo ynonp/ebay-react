@@ -1,0 +1,57 @@
+
+
+                        Hi ;)
+
+                        React Course
+
+                        Ynon Perek
+
+                        Course Materials:
+                        s.ynonperek.com/react
+
+
+
+Hello World (in codesandbox)
+https://codesandbox.io/s/8460k9ryv8?fontsize=14
+
+                        
+
+
+
+
+
+ToCode Signup Link
+http://www.tocode.co.il/user/signup?code=f9b8ef0e
+
+Agenda:
+
+Day 1:
+  * Hello React World (slides)
+  * A First React Component on CodePen
+  * Webpack / ngReact
+  ---
+  * Properties
+  * State
+  * Lab: https://www.tocode.co.il/bundles/react/lessons/components-lab
+  * Lists & Key
+  * Lab  
+
+Day 2:
+  * Multiple Components
+  * Lab
+  * Lifecycle
+  * Ref
+  * Ajax
+  ---
+  * Lab: Ajax
+  * Container Components
+  * Higher Order Components
+  * Lab: Architecture
+
+Day 3:
+  * Immutable Data
+  * Redux
+  * Lab
+  ---
+  * React-Redux
+
