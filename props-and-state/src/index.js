@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Clicker from './clicker';
 import Indicator from './indicator';
+
+import MultipleTextBoxes from './multiple_textboxes';
 import ClickerWithIndicator from './clicker_with_indicator';
 
 // same as:
@@ -12,13 +14,9 @@ function App(props) {
   return (
     <div>
       <h1>Hello World</h1>
+
       <ClickerWithIndicator />
-
-      <Clicker />
-      <Indicator value={91} />
-
-      <Clicker />
-      <Indicator value="5" />
+      <MultipleTextBoxes />
     </div>
   );
 }
