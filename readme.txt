@@ -29,13 +29,13 @@ http://www.tocode.co.il/user/signup?code=f9b8ef0e
 Agenda:
 
 Day 1:
-  * Hello React World (slides)
-  * A First React Component on CodePen
-  * Webpack / ngReact
-  * https://www.tocode.co.il/blog/2019-04-ngreact-intro
+  √ Hello React World (slides)
+  √ A First React Component on CodePen
+  √ Webpack / ngReact
+  √ https://www.tocode.co.il/blog/2019-04-ngreact-intro
   ---
-  * Properties
-  * State
+  √ Properties
+  √ State
   * Lab: https://www.tocode.co.il/bundles/react/lessons/components-lab
   * Lists & Key
   * Lab  

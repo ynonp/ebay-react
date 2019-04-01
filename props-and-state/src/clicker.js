@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Indicator from './indicator';
 
 export default function Clicker(props) {
-  const [clicks, setClicks] = useState(2);
+  const { clicks, setClicks } = props;
+
+  // const [clicks, setClicks] = useState(2);
   // Same as:
   /*
   const res = useState(2);
