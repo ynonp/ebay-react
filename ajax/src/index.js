@@ -6,6 +6,9 @@ import _ from 'underscore';
 class LifecycleDemo extends React.Component {
 }
 
+function StarwarsFilm(props) {
+}
+
 function StarwarsCharacter(props) {
   const style = { color: props.color };
   const [name, setName ] = useState('Loading...');
@@ -17,7 +20,15 @@ function StarwarsCharacter(props) {
   }, [props.id]);
 
   // Here I already returned the data
-  return <p style={style}>My id is {props.id} and my name is {name}</p>
+  return (
+    <div>
+      <p style={style}>My id is {props.id} and my name is {name}</p>
+      <p>My Films:</p>
+      <ul>
+        <li>The empire strikes again</li>
+      </ul>
+    </div>
+  )
 }
 
 function App(props) {
