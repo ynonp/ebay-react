@@ -37,6 +37,11 @@ function App(props) {
   const colors = ['red', 'blue', 'green', 'white', 'gray', 'orange', 'pink'];
   const [ color, setColor ] = useState(_.sample(colors));
 
+  function changeId() {
+    // set a random character id
+  }
+
+
   function changeColor() {
     setColor(_.sample(colors));
   }
