@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
-import game from './game';
+import React, { useState, useEffect } from 'react';
 
 export default function GameComponent(props) {
-  // const { game } = props;
-  const [state, setState] = useState(game.initialState());
+  const { game } = props;
+  const [state, setState] = useState(game.getStateForReactComponent());
   const { data, player } = state;
 
-  const style = {    
+  function update() {
+    setState(game.getStateForReactComponent());
+  }
+
+  const style = {
     display: 'inline-block',
     width: '100px',
     height: '100px',
@@ -14,17 +17,17 @@ export default function GameComponent(props) {
     lineHeight: '100px',
     textAlign: 'center',
     border: '1px solid',
-  }
+  };
 
   function handleClick(ev) {
     const { rowIndex, colIndex } = ev.target.dataset;
-    setState(game.play(state, rowIndex, colIndex));
+    game.play(rowIndex, colIndex);
   }
     
   // onClick={() => play(rowIndex, colIndex)}
 
   return (
-    <div className='game'>
+    <div className='game' style={{display: 'inline-block', margin: '10px'}}>
       {data.map((row, rowIndex) => (
         <div className='row'>
           {row.map((cell, colIndex) => (

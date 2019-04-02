@@ -1,8 +1,8 @@
 class Game {
   constructor() {
     this.board = [
-      [' ', ' ', 'x'],
-      [' ', 'o', 'o'],
+      [' ', ' ', ' '],
+      [' ', ' ', ' '],
       [' ', ' ', ' '],
     ];
     this.player = 'x';

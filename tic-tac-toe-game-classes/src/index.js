@@ -1,39 +1,25 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import GameComponent from './game_component';
-import gameLogic from './game';
+import GameLogic from './game';
+import MovesCounter from './moves_counter_class';
 
-
-function DaysOfTheWeek(props) {
-  const [filter, setFilter] = useState('');
-  const [roll, setRoll] = useState(0);
-
-  let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  days = days.slice(roll).concat(days.slice(0, roll));
-  
-  return (
-    <div>
-      <label>
-        Filter: <input type="text" onChange={(e) => setFilter(e.target.value)} />
-      </label>
-      <button onClick={() => setRoll((roll + 1) % days.length)}>Roll</button>
-      <ul>
-        {days.filter(day => day.toLowerCase().includes(filter.toLowerCase())).map(day => (
-          <li key={day}>
-            <input type="checkbox" />
-            {day}
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-
+const g = [
+  new GameLogic(),
+  new GameLogic(),
+  new GameLogic()
+];
 
 function App(props) {
+  const [idx, setIdx] = useState(0);
+
   return (
     <div>
-      <GameComponent game={gameLogic} />
+      <MovesCounter game={g[idx]} />
+      <button onClick={() => setIdx(0)}>1</button>
+      <button onClick={() => setIdx(1)}>2</button>
+      <button onClick={() => setIdx(2)}>3</button>
+      <GameComponent game={g[idx]} />
     </div>
   )
 }
