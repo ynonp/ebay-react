@@ -36,19 +36,19 @@ Day 1:
   ---
   √ Properties
   √ State
-  * Lab: https://www.tocode.co.il/bundles/react/lessons/components-lab
-  * Lists & Key
-  * Lab  
+  √ Lab: https://www.tocode.co.il/bundles/react/lessons/components-lab
+  √ Lists & Key
+  √ Lab  
 
 Day 2:
-  * Multiple Components
-  * Lab
-  * Lifecycle
-  * Ref
-  * Ajax
+  √ Lab
+  √ Ajax
+  √ Lifecycle / useEffect
+  √ Multiple Components
+  √ Lab: Ajax
   ---
-  * Lab: Ajax
-  * Container Components
+  √ Ref
+  √ Container Components
   * Higher Order Components
   * Lab: Architecture
 

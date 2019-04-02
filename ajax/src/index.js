@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import _ from 'underscore';
+import Timer from './lifecycle.js';
+import FunctionTimer from './timer_functions';
 
 class LifecycleDemo extends React.Component {
 }
@@ -68,6 +70,9 @@ function App(props) {
 
   return (
     <div>
+      <Timer />
+      <FunctionTimer />
+      <hr />
       <button onClick={() => setVisible(!isVisible)}>Show/Hide</button>
       <button onClick={changeColor}>Change Color</button>
       <button onClick={changeId}>Change Id</button>
