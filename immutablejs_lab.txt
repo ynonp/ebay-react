@@ -13,9 +13,14 @@ var state = Immutable.fromJS({
   otherUsers: [ 'joe', 'jane' ]
   });
 
+1. Create a new object changing "username" to "Carla"
 
-כתבו קוד לקבלת אוביקט חדש כך שערך השדה username באוביקט החדש יהיה Carla.
-כתבו קוד ליצירת אוביקט מצב חדש בו התווספו שתי הודעות חדשות מ Carla.
-כתבו קוד ליצירת אוביקט מצב חדש שלא יכלול את ההודעות מהמשתמש joe.
-כתבו קוד ליצירת אוביקט מצב חדש שיכיל רק הודעות הארוכות מ 7 תווים.
-החדר הפעיל ברשימת החדרים מזוהה באמצעות המאפיין current. כתבו קוד ליצירת אוביקט חדש בו החדר הפעיל יהיה חדר מספר 2.
+2. Create a new object where two new messages from "Carla"
+   are added.
+
+3. Create a new object without the messages from "Joe"
+
+4. Create a new object with only messages that are longer than 7 characters
+
+5. The attribute "current" identifies the current room. Create a new object where the active room changes to "2"
+
