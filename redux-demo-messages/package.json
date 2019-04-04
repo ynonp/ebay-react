@@ -5,11 +5,13 @@
   "main": "webpack.config.js",
   "dependencies": {
     "immutable": "^4.0.0-rc.12",
+    "jquery": "^3.3.1",
     "lodash": "^4.17.11",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-redux": "^6.0.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

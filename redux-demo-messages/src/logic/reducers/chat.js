@@ -17,12 +17,32 @@ const initialState = Immutable.fromJS({
   otherUsers: [ 'joe', 'jane' ]
 });
 
+function addMessage(state, from, text) {
+  return state.update('messages', messages => (
+      messages.push(Immutable.fromJS({
+        from,
+        text,
+      }))
+    )
+  )
+}
+
+function play(state, { payload: { row, col }}) {
+  return addMessage(state, 'System', `Someone clicked on ${row} / ${col}`);
+}
+
 
 export default function reducer(state = initialState , action) {
   // action => { type: '...', payload: '...' }
   switch(action.type) {
     case 'RENAME':
       return state.set('username', action.payload);
+
+    case 'ADD_MESSAGE':
+      return addMessage(state, action.payload.from, action.payload.text);
+
+    case 'PLAY':
+      return play(state, action);
 
     default:
       return state;

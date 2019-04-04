@@ -6,11 +6,13 @@ import User from './components/user';
 import Renamer from './components/renamer';
 import { Provider } from 'react-redux';
 import GameComponent from './components/game';
+import ChatComponent from './components/chat';
 
 function App(props) {
   return (
     <Provider store={store}>
       <div>
+        <ChatComponent />
         <GameComponent/>
         <GameComponent/>
         <h1>Hello World</h1>
