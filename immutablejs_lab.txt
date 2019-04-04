@@ -1,0 +1,21 @@
+var state = Immutable.fromJS({
+  rooms: [
+    { id: 0, name: 'Lobby', current: true },
+    { id: 1, name: 'The-Club' },
+    { id: 2, name: 'Food and Drinks' },
+    { id: 3, name: 'Life etc.' }
+  ],
+  messages: [
+    { from: 'joe', text: 'Morning all' },
+    { from: 'jane', text: 'Hi joe' }
+  ],
+  username: 'jack',
+  otherUsers: [ 'joe', 'jane' ]
+  });
+
+
+כתבו קוד לקבלת אוביקט חדש כך שערך השדה username באוביקט החדש יהיה Carla.
+כתבו קוד ליצירת אוביקט מצב חדש בו התווספו שתי הודעות חדשות מ Carla.
+כתבו קוד ליצירת אוביקט מצב חדש שלא יכלול את ההודעות מהמשתמש joe.
+כתבו קוד ליצירת אוביקט מצב חדש שיכיל רק הודעות הארוכות מ 7 תווים.
+החדר הפעיל ברשימת החדרים מזוהה באמצעות המאפיין current. כתבו קוד ליצירת אוביקט חדש בו החדר הפעיל יהיה חדר מספר 2.
