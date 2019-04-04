@@ -12,6 +12,7 @@ function App(props) {
     <Provider store={store}>
       <div>
         <GameComponent/>
+        <GameComponent/>
         <h1>Hello World</h1>
       </div>
     </Provider>

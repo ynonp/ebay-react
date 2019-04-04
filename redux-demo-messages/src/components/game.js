@@ -44,7 +44,8 @@ function GameComponent(props) {
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(reduxState) {
+  const state = reduxState.game;
   return {
     data: state.get('board'),
     player: state.get('player'),
